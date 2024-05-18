@@ -1,9 +1,11 @@
 :root {
     --bg: #0d0c22;
     --bgSoft: #2d2b42;
-    --text: white;
+    --text: #e8eaed;
     --textSoft: #e5e5e5;
     --btn: #3675fd;
-    overflow-y: auto;
-  }
+    --bgSecondary: #000000;
+    background-color: #1f1f1f;
+}
+
   
