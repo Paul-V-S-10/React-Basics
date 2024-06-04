@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './navbar.css'
 import { Link } from 'react-router-dom'
+import { MyContext } from '../../../Hooks/ContextManager'
+
 
 const Navbar = () => {
+  const {count} = useContext(MyContext)
   return (
     <div className='navbar'>
       <div className="container">
@@ -19,6 +22,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+        <div className="sectionThree">{count}</div>
       </div>
     </div>
   )

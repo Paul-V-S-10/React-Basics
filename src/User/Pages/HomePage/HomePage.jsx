@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { MyContext } from '../../../Hooks/ContextManager'
+
 
 const HomePage = () => {
+  const { setCount } = useContext(MyContext)
   return (
-    <div>HomePage</div>
+    <div>
+      <button onClick={()=>setCount((previous)=>previous+1)} >Count</button>
+    </div>
   )
 }
 
